@@ -1,0 +1,3 @@
+INSERT INTO BOOK(ISBN, TITLE) VALUES(9783446461116, 'Praxishandbuch BPMN: Mit Einfuehrung in DMN');
+INSERT INTO BOOK(ISBN, TITLE) VALUES(9783658171780, 'Grundkurs Geschaeftsprozess-Management');
+INSERT INTO BOOK(ISBN, TITLE) VALUES(9783527711178, 'Prozessmanagement fuer Dummies');

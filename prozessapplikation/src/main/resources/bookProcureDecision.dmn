@@ -37,23 +37,12 @@
       </rule>
       <rule id="DecisionRule_0gawnfe">
         <inputEntry id="UnaryTests_1l4swhu">
-          <text>[500..1000[</text>
+          <text>[200..1000[</text>
         </inputEntry>
         <inputEntry id="UnaryTests_0mduv3z">
           <text>&lt;5000</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0vnjyds">
-          <text>false</text>
-        </outputEntry>
-      </rule>
-      <rule id="DecisionRule_09rdmom">
-        <inputEntry id="UnaryTests_1i1qd0t">
-          <text>[200..500[</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_02s3f3q">
-          <text>&lt;3000</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_1xvziie">
           <text>false</text>
         </outputEntry>
       </rule>
