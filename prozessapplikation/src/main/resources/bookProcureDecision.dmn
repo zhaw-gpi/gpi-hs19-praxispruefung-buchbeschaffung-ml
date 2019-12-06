@@ -1,62 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" id="Definitions_1y5y5o9" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="3.1.0">
-  <decision id="bookProcureDecision" name="Buchbeschaffungsentscheid">
-    <decisionTable id="decisionTable_1" hitPolicy="FIRST">
-      <input id="input_1" label="Preis">
-        <inputExpression id="inputExpression_1" typeRef="long">
-          <text>publicationPrice</text>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd"
+             id="Definitions_1th1ko8"
+             name="DRD"
+             namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="Decision_0cxe8hm" name="Decision 1">
+    <decisionTable id="decisionTable_1">
+      <input id="input_1">
+        <inputExpression id="inputExpression_1" typeRef="string">
+          <text></text>
         </inputExpression>
       </input>
-      <input id="InputClause_0pd9ah1" label="Verfügbare Mittel nach Beschaffung">
-        <inputExpression id="LiteralExpression_1cy0wtx" typeRef="long">
-          <text>availableFundsAfterProcure</text>
-        </inputExpression>
-      </input>
-      <output id="output_1" label="Entscheid" name="result" typeRef="boolean" />
-      <rule id="DecisionRule_1qivkph">
-        <inputEntry id="UnaryTests_07y23qa">
-          <text>&gt; 1000</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_11g3pd5">
-          <text></text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_0d1nyh6">
-          <text>false</text>
-        </outputEntry>
-      </rule>
-      <rule id="DecisionRule_0jaey9v">
-        <inputEntry id="UnaryTests_1tkstrp">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_19kd0gp">
-          <text>&lt;0</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_1mos19f">
-          <text>false</text>
-        </outputEntry>
-      </rule>
-      <rule id="DecisionRule_0gawnfe">
-        <inputEntry id="UnaryTests_1l4swhu">
-          <text>[200..1000[</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0mduv3z">
-          <text>&lt;5000</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_0vnjyds">
-          <text>false</text>
-        </outputEntry>
-      </rule>
-      <rule id="DecisionRule_11m9487">
-        <inputEntry id="UnaryTests_1tkzkr5">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_1lpl8wt">
-          <text></text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_1uonw4r">
-          <text>true</text>
-        </outputEntry>
-      </rule>
+      <output id="output_1" typeRef="string"></output>
     </decisionTable>
   </decision>
 </definitions>
